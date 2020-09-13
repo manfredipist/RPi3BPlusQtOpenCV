@@ -340,7 +340,7 @@ That should be it! You have now (hopefully) succesfully installed Qt 5.14.2 on t
 In the next step, we will build OpenCV.
 
 
-## Step 5: Build openCV
+## Step 5: Build OpenCV
 
 It's now time to switch from your host machine to your Raspberry to install OpenCV there. I suggest you to access the desktop of your Raspberry Pi trough HDMI connection or VNC as it will ease the build process.
 
