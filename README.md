@@ -164,7 +164,7 @@ Start a terminal on your RPi and execute the following commands:
 
 At this point you just need to copy the private key on your host machine and access the RPi trough ssh command by passing the key with "-i" option. E.g:
 
-	ssh 192.168.1.1 -l pi -i /home/ubuntu/.ssh/rpi_rsa
+	ssh 192.168.1.1 -l pi -i /home/manfredi/.ssh/rpi_rsa
 
 Further details about this topic can be found here:
 https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
@@ -496,7 +496,7 @@ To enable the RPi camera, after having enabled the interface form raspi-config t
 
 ## Step 7: Configuring Qt Creator
 
-To configure Qt Creator to be able to build and deploy your projects to your RaspberryPi, follow and copy the following configuration:
+To configure Qt Creator to be able to build and deploy your projects to your RaspberryPi, follow and copy the following configuration: (note that my qt project is under the path "/home/manfredi/qt_workspaces/myproject")
 
 ![Setup GCC](/images/1.png?raw=true "Setup GCC")
 ![Setup G++](/images/2.png?raw=true "Setup G++")
