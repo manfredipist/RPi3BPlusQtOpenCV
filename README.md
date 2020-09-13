@@ -123,7 +123,7 @@ Run the following commands in terminal to install the required packages. In this
 
 ### 2.6 Fix libEGL, libOpenVG and libGLES links
 
-I've not gone that far in my researches but it seems there's a problem with the linking of these 3 libraries so you rather need to rename them or link them accordingly. In my installation i've decided to copy them.
+I've not gone that far in my researches but it seems there's a problem with the linking of these 3 libraries so you rather need to rename them or link them accordingly. In my installation i've decided to rename them.
 
 	sudo cp -PR /opt/vc/lib/libbrcmEGL.so /opt/vc/lib/libEGL.so
 	sudo cp -PR /opt/vc/lib/libbrcmGLESv2.so /opt/vc/lib/libGLESv2.so
