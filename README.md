@@ -391,7 +391,7 @@ Press Configure. Once it has finished, edit the following properties as follows:
 
 Press Configure again. Once it has finished, edit the following properties as follows:
 
-	CPU_BASELINE_DISABLE -> ""
+	CPU_BASELINE_DISABLE -> "" (leave it empty)
 
 Configure once again and then press Generate.
 
