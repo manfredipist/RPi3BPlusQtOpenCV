@@ -1,7 +1,7 @@
 # Cross-Compiling Qt 5.14.2, OpenCV 4.4.0 and RaspiCam 0.1.9 for Raspberry Pi 3
 
 ## Disclaimer
-This guide is based on the publications of dozens of Raspberry PI enthusiasts. By the time of writing, i've followed 20 or more different guides thus i will try to credit, as much as i can, all those people whose precious advices helped me achieving this result. Please forgive me if you think i've used your stuff without crediting you, send me an email, i will be more than happy to add you to the credits list.
+This guide is based on the publications of dozens of Raspberry Pi enthusiasts. By the time of writing, i've followed 20 or more different guides thus i will try to credit, as much as i can, all those people whose precious advices helped me achieving this result. Please forgive me if you think i've used your stuff without crediting you, send me an email, i will be more than happy to add you to the credits list.
 
 - https://github.com/UvinduW/Cross-Compiling-Qt-for-Raspberry-Pi-4
 - https://qtcrosscompile.blogspot.com/2020/05/build-cross-compile-qt5.html
@@ -12,9 +12,9 @@ This guide is based on the publications of dozens of Raspberry PI enthusiasts. B
 
 I want to particularly thank @Luca Carlon for having provided a working rpi-toolchain with gcc 8.3, i've tried many of them but only his worked just fine out of the box.
 
-I want also to thank @UvinduW as i'm currently copying his guide template as well as most of his words. I explicity apologize for that but I wanted to provide a working guide without spending too much time on it.
+I want also to thank @UvinduW as I'm currently copying his guide template as well as most of his words. I explicity apologize for that but I wanted to provide a working guide without spending too much time on it.
 
-That said, this guide should help you setting up a working environment to build cool stuff on your rpi using Qt, OpenCV and RaspiCam. Hopefully this guide will help you getting everything up and running without any struggles.
+That said, this guide should help you setting up a working environment to build cool stuff on your Raspberry Pi 3B+ using Qt, OpenCV and RaspiCam. Hopefully this guide will help you getting everything up and running without any struggles.
 
 ## Step 1: Download and flash the Raspberry Pi OS image
 
