@@ -138,10 +138,10 @@ This is where the built Qt sources will be deployed to on the Rasberry Pi. Run t
 	sudo chown -R pi:pi /usr/local/qt5pi
 
 
-## Step 3: Configure Ubuntu
+## Step 3: Configure your PC
 This guide assumes that you have Ubuntu 20.04 already installed on your machine, either natively or running within a virtual machine.
 
-### 3.1 Update the PC
+### 3.1 Update your PC
 Run the following to update your system and install some needed dependancies:
 
 	sudo apt-get update
@@ -164,7 +164,7 @@ Start a terminal on your RPi and execute the following commands:
 
 At this point you just need to copy the private key on your host machine and access the RPi trough ssh command by passing the key with "-i" option. E.g:
 
-	ssh 192.168.1.1 -l pi -i /home/manfredi/.ssh/rpi_rsa
+	ssh 192.168.1.1 -l pi -i ~/.ssh/rpi_rsa
 
 Further details about this topic can be found here:
 https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md
