@@ -419,14 +419,14 @@ sudo ldconfig
 
 Go back to your host machine and Rsync new headers and libraries just built:
 
+	cd ~/rpi
 	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/lib sysroot/local
 	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/include sysroot/local
-
-	To enable camera:
-	echo 'bcm2835-v4l2' | sudo tee -a  /etc/modules
-
+	
 
 ## Step 6: Build RaspiCam
+
+It's now time to switch from your host machine to your Raspberry to install RaspiCam there. 
 
 ### 6.1 Download RaspiCam source
 
@@ -484,6 +484,7 @@ Enter the following command to update the device letting the linker to find the 
 
 Go back to your host machine and Rsync new headers and libraries just built:
 
+	cd ~/rpi
 	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/lib sysroot/local
 	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/include sysroot/local
 
