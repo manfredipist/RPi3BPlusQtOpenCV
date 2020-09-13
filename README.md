@@ -109,7 +109,6 @@ Run the following commands in terminal to install the required packages. In this
 	sudo apt-get build-dep libqt5gui5
 	sudo apt-get build-dep libqt5webengine-data
 	sudo apt-get build-dep libqt5webkit5
-
 	sudo apt-get install libudev-dev libinput-dev libts-dev libxcb-xinerama0-dev libxcb-xinerama0 gdbserver
 
 	# qtmultimedia
@@ -118,7 +117,7 @@ Run the following commands in terminal to install the required packages. In this
 	# qtlocation
 	sudo apt-get install libgeoclue-2-dev libdbus-glib-1-dev libgudev-1.0-dev libbluetooth-dev
 
-	# boost libraries
+	# boost libraries and others
 	sudo apt-get install libboost1.58-all-dev libudev-dev libinput-dev libts-dev libmtdev-dev libjpeg-dev libfontconfig1-dev libssl-dev libdbus-1-dev libglib2.0-dev libxkbcommon-dev libegl1-mesa-dev libgbm-dev libgles2-mesa-dev mesa-common-dev xcb libxcb-xkb-dev x11-xkb-utils libx11-xcb-dev libxkbcommon-x11-dev libwayland-dev
 
 
