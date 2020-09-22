@@ -1,4 +1,4 @@
-# Cross-Compiling Qt 5.14.2, OpenCV 4.4.0 and RaspiCam 0.1.9 for Raspberry Pi 3
+# Cross-Compiled Qt 5.14.2, OpenCV 4.4.0 and RaspiCam 0.1.9 for Raspberry Pi 3
 
 ## Disclaimer
 This guide is based on the publications of dozens of Raspberry Pi enthusiasts. By the time of writing, i've followed 20 or more different guides thus i will try to credit, as much as i can, all those people whose precious advices helped me achieving this result. Please forgive me if you think i've used your stuff without crediting you, send me an email, i will be more than happy to add you to the credits list.
