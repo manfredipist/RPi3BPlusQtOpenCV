@@ -553,3 +553,24 @@ Finally setup your .pro file as follows to sucessfully include all the libraries
 
 	INCLUDEPATH += $$PWD/../../piQt/sysroot/usr/local/include
 	DEPENDPATH += $$PWD/../../piQt/sysroot/usr/local/include
+
+## Final touches
+After having spent all this time to properly configure you RasberryPi, it's now time to start developing some cool applications with it. That said, you would notice that you won't be able to "stream" the application you're deploying, on your host machine. This is due to some missing configurations we are going to fix now.  
+
+On your RaspberryPi run the following command :
+	sudo nano /etc/ssh/sshd_config
+end enable X11 forwarding by adding the following line to the configuration:
+	X11Forwarding yes
+Save and close the file and restart sshd service:
+	sudo systemctl restart  ssh 
+
+On your host machine open a terminal and run the following command:
+	ssh -X 192.168.1.61 -l pi -i .ssh/rpi_rsa
+You'll need to keep this terminal open to maintain the X11 session alive and be able to stream your applications on your host machine.
+
+Move to QtCreator, go to Projects settings -> Build & Run -> Run settings and add the following parameter to command line arguments:
+	-platform xcb
+Then add an environment variable as follows:
+	DISPLAY localhost:10.0
+	
+That's it. Deploy your application and watch the MainWindow directly streamed from your RaspberryPi to your host machine.
