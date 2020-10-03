@@ -575,6 +575,7 @@ On your host machine open a terminal and run the following command:
 	ssh -X 192.168.1.61 -l pi -i .ssh/rpi_rsa
 	
 You'll need to keep this terminal open to maintain the X11 session alive and be able to stream your applications on your host machine.
+
 Move to QtCreator, go to Projects settings -> Build & Run -> Run settings and add the following parameter to command line arguments:
 
 	-platform xcb
