@@ -419,8 +419,8 @@ Enter the following command to update the device letting the linker to find the 
 Go back to your host machine and Rsync new headers and libraries just built:
 
 	cd ~/rpi
-	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/lib sysroot/local
-	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/include sysroot/local
+	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/lib sysroot/usr/local
+	rsync -avz --rsync-path="sudo rsync" --delete pi@192.168.1.1:/usr/local/include sysroot/usr/local
 	
 
 ## Step 6: Build RaspiCam
