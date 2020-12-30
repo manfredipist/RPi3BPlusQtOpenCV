@@ -585,3 +585,5 @@ Then add an environment variable as follows:
 	DISPLAY localhost:10.0
 	
 That's it. Deploy your application and watch the MainWindow directly streamed from your RaspberryPi to your host machine.
+
+N.B: if you're trying to cross-compile from MacOS (i'm currently doing it from Big Sur), make sure to have xQuartz installed and to have X11 forwarding enabled by editing the config file under /private/etc/ssh/sshd_config
