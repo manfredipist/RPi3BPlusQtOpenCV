@@ -411,8 +411,8 @@ Finally compile OpenCV
 
 Enter the following command to update the device letting the linker to find the new OpenCV library files:
 
-echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/opencv.conf
-sudo ldconfig
+	echo /usr/local/lib | sudo tee /etc/ld.so.conf.d/opencv.conf
+	sudo ldconfig
 
 ### 5.4 Rsync openCV sources
 
