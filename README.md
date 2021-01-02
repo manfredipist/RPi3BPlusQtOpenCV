@@ -350,7 +350,7 @@ Run the following commands in your Raspberry Pi terminal to install the required
 
 	sudo apt-get install build-essential cmake pkg-config
 	sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
-	sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+	sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libavresample-dev
 	sudo apt-get install libxvidcore-dev libx264-dev
 	sudo apt-get install libgtk2.0-dev libgtk-3-dev
 	sudo apt-get install libatlas-base-dev gfortran
@@ -364,8 +364,8 @@ Run the following commands to download OpenCV 4.4.0 source files in /opt folder:
 
 	cd /opt
 	sudo mkdir opencv
+        sudo chown -R pi:pi opencv
 	mkdir opencv/build
-	sudo chown -R pi:pi opencv
 	cd opencv
 	wget https://github.com/opencv/opencv/archive/4.4.0.zip
 
@@ -385,9 +385,14 @@ Press Configure. Once it has finished, edit the following properties as follows:
 	CMAKE_BUILD_TYPE -> Release
 	WITH_OPENGL -> True
 	WITH_QT -> False
+	WITH_GTK -> True
+	WITH_GTK_2_X -> True
 	ENABLE_NEON -> True
-	ENABLE_VFP3 -> True  
+	ENABLE_VFPV3 -> True  
 	ENABLE_NONFREE -> True
+	OPENCV_GENERATE_PKGCONFIG ->True
+	BUILD_TESTS -> False
+	
 
 Press Configure again. Once it has finished, edit the following properties as follows:
 
@@ -407,7 +412,7 @@ Finally compile OpenCV
 	make -j 4
 	sudo make install
 
-### 5.4 Update linker on Raspberry Pi
+### 5.4 Update linker on Raspberry Pi (*Should not be needed*)
 
 Enter the following command to update the device letting the linker to find the new OpenCV library files:
 
@@ -433,8 +438,8 @@ Run the following commands to download RaspiCam source files in /opt folder:
 
 	cd /opt
 	sudo mkdir raspicam
-	mkdir raspicam/build
 	sudo chown -R pi:pi raspicam
+	mkdir raspicam/build
 	cd raspicam
 
 	https://sourceforge.net/projects/raspicam/files/latest/download
@@ -472,7 +477,7 @@ Finally compile the lib:
 	make
 	sudo make install
 
-### 6.4 Update linker on Raspberry Pi
+### 6.4 Update linker on Raspberry Pi (*Should not be needed*)
 
 Enter the following command to update the device letting the linker to find the new OpenCV library files:
 
